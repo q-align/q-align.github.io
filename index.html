@@ -127,7 +127,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/Q-Future/Q-Align" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -155,22 +155,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -180,7 +164,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            The explosion of visual content available online underscores the requirement for an accurate machine assessor to robustly evaluate scores across diverse types of visual contents. 
+            While recent studies have demonstrated the exceptional potentials of large multi-modality models (LMMs) on a wide range of disciplines, 
+            in this work, we explore how to teach them to accurately predict visual scores aligned with human opinions.
+            Specifically, we propose to emulate the training and prediction process of human annotators, 
+            and design a syllabus that instructs LMMs to respond with <strong><em>discrete text-defined levels</em></strong> instead of direct scores. 
+            The proposed <strong><em>Q-Align</em></strong> syllabus achieves state-of-the-art performance on
+            <strong><em>image quality assessment</em></strong> (IQA), <strong><em>image aesthetic assessment</em></strong> (IAA), 
+            as well as <strong><em>video quality assessment</em></strong> (VQA) tasks under the original LMM structure. 
+            With the syllabus, we further unify the three tasks into one model, termed the <strong><em>OneAlign</em></strong>. 
+            In our experiments, we demonstrate the advantage of the discrete-level-based syllabus over direct-score-based variants for LMMs.
           </p>
         </div>
       </div>
