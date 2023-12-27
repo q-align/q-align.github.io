@@ -25,7 +25,7 @@
 
 
   <title>Q-Align: Teaching LMMs for Visual Scoring via Discrete Text-Defined Levels</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/148673336?s=200&v=4">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -56,7 +56,7 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://github.com/teowu" target="_blank">Haoning Wu</a><sup>1*</sup>,</span>
+                <a href="https://github.com/teowu" target="_blank">Haoning Wu</a><sup>1*+</sup>,</span>
                 <span class="author-block">
                   <a href="https://github.com/zzc-1998" target="_blank">Zicheng Zhang</a><sup>2*</sup>,</span>
                   <span class="author-block">
@@ -98,7 +98,7 @@
                     <span class="author-block"><sup>1</sup>Nanyang Technological University</span>
                     <span class="author-block"><sup>2</sup>Shanghai Jiao Tong University</span>
                     <span class="author-block"><sup>3</sup>Sensetime Research</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution  <sup>#</sup>Corresponding Authors</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution. <sup>+</sup>Project Lead. <sup>#</sup>Corresponding Author(s).</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -164,7 +164,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The explosion of visual content available online underscores the requirement for an accurate machine assessor to robustly evaluate scores across diverse types of visual contents. While recent studies have demonstrated the exceptional potentials of large multi-modality models (LMMs) on a wide range of related fields, in this work, we explore how to teach them for visual rating aligned with human opinions. Observing that human raters only learn and judge discrete text-defined levels in subjective studies, we propose to emulate this subjective process and teach LMMs with text-defined rating levels instead of scores. The proposed Q-Align achieves state-of-the-art performance on image quality assessment (IQA), image aesthetic assessment (IAA), as well as video quality assessment (VQA) tasks under the original LMM structure. With the syllabus, we further unify the three tasks into one model, termed the OneAlign. In our experiments, we demonstrate the advantage of the discrete-level-based syllabus over direct-score-based variants for LMMs.
+            The explosion of visual content available online underscores the requirement for an accurate machine assessor to robustly evaluate scores across diverse types of visual contents. While recent studies have demonstrated the exceptional potentials of large multi-modality models (LMMs) on a wide range of related fields, in this work, we explore how to teach them for visual rating aligned with human opinions. Observing that human raters only learn and judge discrete text-defined levels in subjective studies, we propose to emulate this subjective process and teach LMMs with text-defined rating levels instead of scores. The proposed <strong>Q-Align</strong> achieves state-of-the-art performance on image quality assessment (IQA), image aesthetic assessment (IAA), as well as video quality assessment (VQA) tasks under the original LMM structure. With the syllabus, we further unify the three tasks into one model, termed the OneAlign. In our experiments, we demonstrate the advantage of the discrete-level-based syllabus over direct-score-based variants for LMMs.
           </p>
         </div>
         <img src="static/images/tmp_radar.png" , width="800" />
@@ -180,7 +180,7 @@
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-fifths">
-          <h5 class="title">Method: The syllabus of <strong>Q-Align</strong></strong></h5>
+          <h5 class="title">Overview</h5>
           <div class="content has-text-justified">
             <p>
               Based on the general principle of teaching LMMs with text-defined rating levels, 
@@ -221,10 +221,10 @@
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-fifths">
-          <h5 class="title">Method: The structure of <strong>Q-Align</strong></strong></h5>
+          <h5 class="title">Structure/h5>
           <div class="content has-text-justified">
             <p>
-              The structure of Q-Align, unifying images and videos.
+              The model structure of the Q-Align reduces tokens per image to 64 through the visual abstractor, effectively unifying images and videos (as sequences of images) under one general structure. This approach allows for a streamlined and efficient processing of both static images and dynamic video content within the same framework.
             </p>
           </div>
           <img src="static/images/structure.png" , width="900" />
