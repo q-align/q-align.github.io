@@ -87,10 +87,10 @@
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xiongkuo Min</a><sup>2</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Guangtai Zhai</a><sup>2&#10013</sup>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Guangtai Zhai</a><sup>2#</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Weisi Lin</a><sup>1&#10013</sup>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Weisi Lin</a><sup>1#</sup>,
                   </span>
                   </div>
 
@@ -98,7 +98,7 @@
                     <span class="author-block"><sup>1</sup>Nanyang Technological University</span>
                     <span class="author-block"><sup>2</sup>Shanghai Jiao Tong University</span>
                     <span class="author-block"><sup>3</sup>Sensetime Research</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution<sup>&#10013</sup>Corresponding Authors</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution  <sup>#</sup>Corresponding Authors</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -121,7 +121,7 @@
                       <span class="icon">
                         <i class="fas fa-smile"></i>
                       </span>
-                      <span>HF</span>
+                      <span>OneAlign (HF)</span>
                     </a>
                   </span>
 
@@ -164,16 +164,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The explosion of visual content available online underscores the requirement for an accurate machine assessor to robustly evaluate scores across diverse types of visual contents. 
-            While recent studies have demonstrated the exceptional potentials of large multi-modality models (LMMs) on a wide range of disciplines, 
-            in this work, we explore how to teach them to accurately predict visual scores aligned with human opinions.
-            Specifically, we propose to emulate the training and prediction process of human annotators, 
-            and design a syllabus that instructs LMMs to respond with <strong><em>discrete text-defined levels</em></strong> instead of direct scores. 
-            The proposed <strong><em>Q-Align</em></strong> syllabus achieves state-of-the-art performance on
-            <strong><em>image quality assessment</em></strong> (IQA), <strong><em>image aesthetic assessment</em></strong> (IAA), 
-            as well as <strong><em>video quality assessment</em></strong> (VQA) tasks under the original LMM structure. 
-            With the syllabus, we further unify the three tasks into one model, termed the <strong><em>OneAlign</em></strong>. 
-            In our experiments, we demonstrate the advantage of the discrete-level-based syllabus over direct-score-based variants for LMMs.
+            The explosion of visual content available online underscores the requirement for an accurate machine assessor to robustly evaluate scores across diverse types of visual contents. While recent studies have demonstrated the exceptional potentials of large multi-modality models (LMMs) on a wide range of related fields, in this work, we explore how to teach them for visual rating aligned with human opinions. Observing that human raters only learn and judge discrete text-defined levels in subjective studies, we propose to emulate this subjective process and teach LMMs with text-defined rating levels instead of scores. The proposed Q-Align achieves state-of-the-art performance on image quality assessment (IQA), image aesthetic assessment (IAA), as well as video quality assessment (VQA) tasks under the original LMM structure. With the syllabus, we further unify the three tasks into one model, termed the OneAlign. In our experiments, we demonstrate the advantage of the discrete-level-based syllabus over direct-score-based variants for LMMs.
           </p>
         </div>
         <img src="static/images/tmp_radar.png" , width="800" />
@@ -189,7 +180,7 @@
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-fifths">
-          <h5 class="title">The syllabus of <strong><em>Q-Align</em></strong></strong></h5>
+          <h5 class="title">Method: The syllabus of <strong>Q-Align</strong></strong></h5>
           <div class="content has-text-justified">
             <p>
               Based on the general principle of teaching LMMs with text-defined rating levels, 
@@ -210,16 +201,33 @@
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-fifths">
-          <h5 class="title">How do humans rate?</strong></h5>
+          <h5 class="title">Insight: How Do Humans Rate?</strong></h5>
           <div class="content has-text-justified">
             <p>
-              Typically, it includes three stages: <strong><em>(1)</em></strong> Training human raters with text-defined rating levels. 
-              Simulating this, we propose the rating-level-based syllabus for LMMs. <strong><em>(2)</em></strong> Collecting human ratings. Human raters choose levels (Type 1) or toggle level-guided sliders to score (Type 2), 
-              \textit{without directly inputting the score in either way}. <strong><em>(3)</em></strong> Converting initial ratings to MOS via weighted average. 
+              Typically, it includes three stages: <em>(1)</em> Training human raters with text-defined rating levels. 
+              Simulating this, we propose the rating-level-based syllabus for LMMs. <em>(2)</em> Collecting human ratings. Human raters choose levels (Type 1) or toggle level-guided sliders to score (Type 2), 
+              <strong>without directly inputting the score in either way</strong>. <em>(3)</em> Converting initial ratings to MOS via weighted average. 
               Following this stage, we propose the probability-based inference for LMMs to predict final scores.
             </p>
           </div>
-          <img src="static/images/humanrateascore.png" , width="1400" />
+          <img src="static/images/motivation_from_human.png" , width="1400" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+          <h5 class="title">Method: The structure of <strong>Q-Align</strong></strong></h5>
+          <div class="content has-text-justified">
+            <p>
+              The structure of Q-Align, unifying images and videos.
+            </p>
+          </div>
+          <img src="static/images/structure.png" , width="900" />
         </div>
       </div>
     </div>
