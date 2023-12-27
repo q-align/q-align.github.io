@@ -189,20 +189,41 @@
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-fifths">
-          <h5 class="title">Perfromance of <strong><em>Q-Align</em></strong></h5>
+          <h5 class="title">The syllabus of <strong><em>Q-Align</em></strong></strong></h5>
           <div class="content has-text-justified">
             <p>
-              Comparison between <strong><em>Q-Align</em></strong> and existing state-of-the-art visual assessors, 
-              showing exceptional performance especially on <strong><em>cross-set</em></strong> settings. 
-              Metrics are the average of SRCC and PLCC. 
+              Based on the general principle of teaching LMMs with text-defined rating levels, 
+              we generate the instruction-response pairs by converting <strong><em>existing score labels</em></strong> in image quality assessment (IQA),
+              image aesthetic assessment (IAA) and video quality assessment (VQA) datasets. 
+              During inference, by simulating the process of collecting mean opinion scores (MOS) from annotators, 
+              we extract the close-set probabilinities of rating levels and perform weighted averages to obtain the LMM-predicted score.
             </p>
           </div>
-          <img src="static/images/tmp_radar.png" , width="600" />
+          <img src="static/images/q-align-syllabus.png" , width="1000" />
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Teaser -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+          <h5 class="title">How do humans rate?</strong></h5>
+          <div class="content has-text-justified">
+            <p>
+              Typically, it includes three stages: <strong><em>(1)</em></strong> Training human raters with text-defined rating levels. 
+              Simulating this, we propose the rating-level-based syllabus for LMMs. <strong><em>(2)</em></strong> Collecting human ratings. Human raters choose levels (Type 1) or toggle level-guided sliders to score (Type 2), 
+              \textit{without directly inputting the score in either way}. <strong><em>(3)</em></strong> Converting initial ratings to MOS via weighted average. 
+              Following this stage, we propose the probability-based inference for LMMs to predict final scores.
+            </p>
+          </div>
+          <img src="static/images/humanrateascore.png" , width="1000" />
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 <!-- Image carousel -->
