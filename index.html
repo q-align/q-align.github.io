@@ -43,8 +43,10 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.12.0/gradio.js"></script>
 </head>
 <body>
+  
 
 
   <section class="hero">
@@ -159,6 +161,12 @@
   </div>
 </section>
 
+
+<section class="section"  style="background-color:#efeff081">
+    <div class="container is-max-desktop" id="gradio">
+      <gradio-app src="https://teowu-onescorer.hf.space/"></gradio-app>
+    </div>
+</section>
 
 
 <!-- Paper abstract -->
@@ -299,7 +307,7 @@
       <pre><code>@article{wu2023qalign,
   title={Q-Align: Teaching LMMs for Visual Scoring via Discrete Text-Defined Levels},
   author={Wu, Haoning and Zhang, Zicheng and Zhang, Weixia and Chen, Chaofeng and Li, Chunyi and Liao, Liang and Wang, Annan and Zhang, Erli and Sun, Wenxiu and Yan, Qiong and Min, Xiongkuo and Zhai, Guangtao and Lin, Weisi},
-  journal={arXiv preprint arXiv:2312.xxxxx},
+  journal={arXiv preprint arXiv:2312.17090},
   year={2023},
   institution={Nanyang Technological University and Shanghai Jiao Tong University and Sensetime Research},
   note={Equal Contribution by Wu, Haoning and Zhang, Zicheng. Corresponding Authors: Zhai, Guangtao and Lin, Weisi.}
